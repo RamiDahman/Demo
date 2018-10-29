@@ -4,4 +4,4 @@ services:
   generator:    
     image: my-registry:55000/gen:ci-8
     ports:
-      - "8081:80" 
+      - "8082:80" 
