@@ -2,6 +2,6 @@ version: '3.0'
 
 services:
   generator:    
-    image: my-registry:55000/gen:ci-8
+    image: my-registry:55000/gen:ci-${GENERATOR_BUILD_NUMBER-10}
     ports:
       - "8082:80" 
