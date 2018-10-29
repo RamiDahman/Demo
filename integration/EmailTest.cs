@@ -16,7 +16,8 @@ namespace integration
             {
                 Method = HttpMethod.Get,
                 RequestUri = new Uri($"{GeneratorApiRoot}/EmailRandomNames")
-            };
+            }; 
+
 
             using (var response= await client.SendAsync(request))
             {
