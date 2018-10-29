@@ -18,7 +18,6 @@ namespace integration
                 RequestUri = new Uri($"{GeneratorApiRoot}/EmailRandomNames")
             }; 
 
-
             using (var response= await client.SendAsync(request))
             {
                 response.EnsureSuccessStatusCode();
