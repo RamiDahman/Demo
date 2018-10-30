@@ -6,7 +6,7 @@ services:
     ports:
       - "8081:80"
   integration: 
-    image: my-registry:55000/gen:integration-${BUILD_NUMBER-25}
+    image: my-registry:55000/gen:integration-${BUILD_NUMBER-20}
     build: .
     environment:
       - TEAMCITY_PROJECT_NAME: ${TEAMCITY_PROJECT_NAME}
