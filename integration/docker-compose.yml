@@ -2,11 +2,11 @@ version: '3.1'
 
 services:
   generator:    
-    image: my-registry:55000/gen:ci-${GENERATOR_BUILD_NUMBER}
+    image: my-registry:55000/gen:ci-${GENERATOR_BUILD_NUMBER-25}
     ports:
       - "8081:80"
   integration: 
-    image: my-registry:55000/gen:integration-${BUILD_NUMBER}
+    image: my-registry:55000/gen:integration-${BUILD_NUMBER-25}
     build: .
     environment:
       - TEAMCITY_PROJECT_NAME: ${TEAMCITY_PROJECT_NAME}
