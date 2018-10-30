@@ -8,7 +8,6 @@ services:
   integration: 
     image: my-registry:55000/gen:integration-${BUILD_NUMBER-20}
     build: .
-    environment:
-      - TEAMCITY_PROJECT_NAME: ${TEAMCITY_PROJECT_NAME}
+   
   
       
